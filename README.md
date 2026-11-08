@@ -3,7 +3,7 @@
 A personal wellness tracking web application built for **CSCI426 Advanced Web Programming - Project Phase 1** (theme 6: HealthTrack).
 
 Users can log workouts and meals, set daily goals, and follow their progress with progress rings and a weekly chart. All data is stored in the browser (`localStorage`), so no backend is needed.
-https://app.netlify.com/projects/healthtrack-appp/configuration/general
+https://app.netlify.com/projects/healthtrack-appp
 
 ## Features
 
