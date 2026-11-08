@@ -10,6 +10,12 @@ const links = [
   { to: "/contact", label: "Contact" },
 ];
 
+function closeMenu() {
+  const menu = document.getElementById("mainNav");
+  if (menu && menu.classList.contains("show")) {
+    menu.classList.remove("show");
+  }
+}
 export default function NavBar() {
   const { theme, toggleTheme } = useHealth();
 
@@ -40,8 +46,7 @@ export default function NavBar() {
                   to={l.to}
                   end={l.end}
                   className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}
-                  data-bs-toggle="collapse"
-                  data-bs-target="#mainNav.show"
+                  onClick={closeMenu}
                 >
                   {l.label}
                 </NavLink>
